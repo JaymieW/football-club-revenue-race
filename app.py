@@ -22,7 +22,14 @@ def add_cors_headers(response):
 
 @app.route("/api/race-gif", methods=["GET"])
 def race_gif():
-    fps = max(5, min(int(request.args.get("fps", 20)), 30))
+    # fps = max(5, min(int(request.args.get("fps", 20)), 30))
+    raw_fps = request.args.get("fps", 20)
+    try:
+        fps = int(raw_fps)
+    except (TypeError, ValueError):
+        fps = 20
+
+    fps = max(5, min(fps, 30))
     df = build_sample_data()
 
     with tempfile.NamedTemporaryFile(suffix=".gif", delete=False) as tmp:
