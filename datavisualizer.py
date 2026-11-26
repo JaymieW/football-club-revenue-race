@@ -36,14 +36,7 @@ def build_sample_data():
         (2016, "Manchester City", 427.70, "#d81b60"),
         (2016, "Paris Saint-Germain", 386.20, "#c5b31a"),
         (2016, "Arsenal", 387.60, "#2ecc40"),
-        (2016, "Chelsea", 328.00, "#10b981"),
-        (2016, "Liverpool", 324.20, "#17a2b8"),
-        (2016, "Juventus", 305.70, "#4b0082"),
-        (2016, "Tottenham Hotspur", 259.50, "#b85d19"),
-        (2016, "Borussia Dortmund", 232.60, "#9acd32"),
-        (2016, "Atlético Madrid", 172.50, "#2563eb"),
-        (2016, "Inter Milan", 162.10, "#9333ea"),
-        (2016, "Schalke 04", 130.20, "#a3b11a"),
+
         # 2017 figures
         (2017, "Real Madrid", 674.60, "#d62728"),
         (2017, "Barcelona", 648.30, "#1db954"),
@@ -52,14 +45,7 @@ def build_sample_data():
         (2017, "Manchester City", 527.70, "#d81b60"),
         (2017, "Paris Saint-Germain", 486.20, "#c5b31a"),
         (2017, "Arsenal", 487.60, "#2ecc40"),
-        (2017, "Chelsea", 428.00, "#10b981"),
-        (2017, "Liverpool", 424.20, "#17a2b8"),
-        (2017, "Juventus", 405.70, "#4b0082"),
-        (2017, "Tottenham Hotspur", 359.50, "#b85d19"),
-        (2017, "Borussia Dortmund", 332.60, "#9acd32"),
-        (2017, "Atlético Madrid", 272.50, "#2563eb"),
-        (2017, "Inter Milan", 262.10, "#9333ea"),
-        (2017, "Schalke 04", 230.20, "#a3b11a"),
+
         # 2018 figures
         (2018, "Barcelona", 818.10, "#1db954"),
         (2018, "Real Madrid", 745.63, "#d62728"),
@@ -68,14 +54,7 @@ def build_sample_data():
         (2018, "Paris Saint-Germain", 618.92, "#c5b31a"),
         (2018, "Manchester City", 599.66, "#d81b60"),
         (2018, "Liverpool", 596.48, "#17a2b8"),
-        (2018, "Tottenham Hotspur", 507.66, "#b85d19"),
-        (2018, "Chelsea", 505.37, "#10b981"),
-        (2018, "Juventus", 448.86, "#4b0082"),
-        (2018, "Arsenal", 435.01, "#2ecc40"),
-        (2018, "Borussia Dortmund", 370.63, "#9acd32"),
-        (2018, "Atlético Madrid", 361.22, "#2563eb"),
-        (2018, "Inter Milan", 351.57, "#9333ea"),
-        (2018, "Schalke 04", 306.62, "#a3b11a"),
+
     ]
     return pd.DataFrame(rows, columns=["year", "club", "revenue_m", "color"])
 
